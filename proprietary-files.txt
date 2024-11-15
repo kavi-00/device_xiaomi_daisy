@@ -643,4 +643,4 @@ vendor/lib64/libkeymasterutils.so
 vendor/etc/sensors/sensor_def_qcomdev.conf
 
 # Touchscreen firmware
-etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
+system/etc/firmware/goodix_firmware.bin:vendor/firmware/goodix_firmware.bin
