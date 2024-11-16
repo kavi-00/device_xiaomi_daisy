@@ -25,7 +25,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libgf_hal.so': blob_fixup()
         .sig_replace('10 03 00 D0 11 52 46 F9', '10 03 00 D0 1F 20 03 D5'),
     'vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so': blob_fixup()
-        .remove_needed('libprotobuf-cpp-lite.so'),
+        .remove_needed('libprotobuf-cpp-lite.so')
+        .binary_regex_replace(b'libvendor.goodix.hardware.fingerprint@1.0.so', b'vendor.goodix.hardware.fingerprint@1.0.so\x00\x00\x00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

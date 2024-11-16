@@ -65,7 +65,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     com.fingerprints.extension@1.0.vendor \
-    libvendor.goodix.hardware.fingerprint@1.0.vendor
+    vendor.goodix.hardware.fingerprint@1.0.vendor
 
 ifeq ($(AB_OTA_UPDATER), true)
 # Update engine
