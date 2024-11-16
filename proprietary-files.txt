@@ -617,10 +617,10 @@ vendor/lib/libmmcamera_ubifocus_lib.so
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.msm8953.so
 
 # Fingerprint (fpc) - from sakura
-vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so|41b69bb7a13d9a00a59f0a855a2f9087e43281da
+vendor/lib64/hw/fingerprint.default.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|41b69bb7a13d9a00a59f0a855a2f9087e43281da|4718e0917ce4cefae0179e95763069d319c33ba5
 
 # Fingerprint (goodix)
-vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so
+vendor/lib64/hw/gf_fingerprint.default.so:vendor/lib64/hw/gf_fingerprint.goodix.default.so;FIX_SONAME
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libvendor.goodix.hardware.fingerprint@1.0-service.so
