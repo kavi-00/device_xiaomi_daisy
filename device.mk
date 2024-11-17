@@ -55,10 +55,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.xiaomi_msm8953
-
 ifeq ($(AB_OTA_UPDATER), true)
 # Update engine
 PRODUCT_PACKAGES += \
