@@ -1,6 +1,9 @@
 # Not appended blobs from daisy-user 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM release-keys
 # sakura: sakura-user 9 PKQ1.180917.001 V12.0.1.0.PDICNXM release-keys
 
+# Current blobs with ELF checks disabled:
+# libmmcamera_faceproc, libmmcamera_faceproc2 depends on NDK libc and build is unable to resolve its symbols
+
 # Audio ACDB
 vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb
 vendor/etc/acdbdata/QRD/QRD_General_cal.acdb
