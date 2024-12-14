@@ -52,6 +52,13 @@ TARGET_TAP_TO_WAKE_NODE := "/proc/touchpanel/wakeup_gesture"
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 
+# Recovery
+ifeq ($(AB_OTA_UPDATER), true)
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab_AB.qcom
+else
+TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
+endif
+
 # Security Patch Level
 VENDOR_SECURITY_PATCH := 2021-07-01
 
